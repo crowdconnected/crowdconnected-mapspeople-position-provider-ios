@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		62711A92268BB91800A95A4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A91268BB91800A95A4E /* ContentView.swift */; };
 		62711A94268BB91900A95A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A93268BB91900A95A4E /* Assets.xcassets */; };
 		62711A97268BB91900A95A4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62711A96268BB91900A95A4E /* Preview Assets.xcassets */; };
+		62711A9F268BBB1000A95A4E /* MapsPeopleUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711A9E268BBB1000A95A4E /* MapsPeopleUIKitView.swift */; };
+		62711AA1268BBB2500A95A4E /* MapsPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711AA0268BBB2500A95A4E /* MapsPeopleView.swift */; };
+		62711AA4268BBD0800A95A4E /* CrowdConnectedPositionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62711AA3268BBD0800A95A4E /* CrowdConnectedPositionProvider.swift */; };
+		C23420BFFDA982713D599754 /* Pods_MapsPeople_Sample_Integration_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A956854274F6A8FF37902C5E /* Pods_MapsPeople_Sample_Integration_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,12 @@
 		62711A93268BB91900A95A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62711A96268BB91900A95A4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62711A98268BB91900A95A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62711A9E268BBB1000A95A4E /* MapsPeopleUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsPeopleUIKitView.swift; sourceTree = "<group>"; };
+		62711AA0268BBB2500A95A4E /* MapsPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsPeopleView.swift; sourceTree = "<group>"; };
+		62711AA3268BBD0800A95A4E /* CrowdConnectedPositionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdConnectedPositionProvider.swift; sourceTree = "<group>"; };
+		8F3F656D5D5BBDA1A71B94AB /* Pods-MapsPeople Sample Integration iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsPeople Sample Integration iOS.debug.xcconfig"; path = "Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A956854274F6A8FF37902C5E /* Pods_MapsPeople_Sample_Integration_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapsPeople_Sample_Integration_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C262F6C24A6C8495E20008CB /* Pods-MapsPeople Sample Integration iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsPeople Sample Integration iOS.release.xcconfig"; path = "Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C23420BFFDA982713D599754 /* Pods_MapsPeople_Sample_Integration_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,8 @@
 			children = (
 				62711A8E268BB91800A95A4E /* MapsPeople Sample Integration iOS */,
 				62711A8D268BB91800A95A4E /* Products */,
+				8D1E640A2E87B57D6FE69509 /* Pods */,
+				9996D27263006F992CFD04DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +65,9 @@
 		62711A8E268BB91800A95A4E /* MapsPeople Sample Integration iOS */ = {
 			isa = PBXGroup;
 			children = (
+				62711AA2268BBB3A00A95A4E /* Views */,
 				62711A8F268BB91800A95A4E /* MapsPeople_Sample_Integration_iOSApp.swift */,
-				62711A91268BB91800A95A4E /* ContentView.swift */,
+				62711AA3268BBD0800A95A4E /* CrowdConnectedPositionProvider.swift */,
 				62711A93268BB91900A95A4E /* Assets.xcassets */,
 				62711A98268BB91900A95A4E /* Info.plist */,
 				62711A95268BB91900A95A4E /* Preview Content */,
@@ -69,6 +83,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		62711AA2268BBB3A00A95A4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62711A91268BB91800A95A4E /* ContentView.swift */,
+				62711AA0268BBB2500A95A4E /* MapsPeopleView.swift */,
+				62711A9E268BBB1000A95A4E /* MapsPeopleUIKitView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D1E640A2E87B57D6FE69509 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3F656D5D5BBDA1A71B94AB /* Pods-MapsPeople Sample Integration iOS.debug.xcconfig */,
+				C262F6C24A6C8495E20008CB /* Pods-MapsPeople Sample Integration iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9996D27263006F992CFD04DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A956854274F6A8FF37902C5E /* Pods_MapsPeople_Sample_Integration_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62711A9B268BB91900A95A4E /* Build configuration list for PBXNativeTarget "MapsPeople Sample Integration iOS" */;
 			buildPhases = (
+				F467A9EE1E5E4E635C24AC04 /* [CP] Check Pods Manifest.lock */,
 				62711A88268BB91800A95A4E /* Sources */,
 				62711A89268BB91800A95A4E /* Frameworks */,
 				62711A8A268BB91800A95A4E /* Resources */,
+				93307EF6D839FC6462C9A302 /* [CP] Embed Pods Frameworks */,
+				412D1B7C811F2068F5008906 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,13 +177,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		412D1B7C811F2068F5008906 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93307EF6D839FC6462C9A302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapsPeople Sample Integration iOS/Pods-MapsPeople Sample Integration iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F467A9EE1E5E4E635C24AC04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapsPeople Sample Integration iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62711A88268BB91800A95A4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62711AA1268BBB2500A95A4E /* MapsPeopleView.swift in Sources */,
+				62711AA4268BBD0800A95A4E /* CrowdConnectedPositionProvider.swift in Sources */,
 				62711A92268BB91800A95A4E /* ContentView.swift in Sources */,
 				62711A90268BB91800A95A4E /* MapsPeople_Sample_Integration_iOSApp.swift in Sources */,
+				62711A9F268BBB1000A95A4E /* MapsPeopleUIKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +370,7 @@
 		};
 		62711A9C268BB91900A95A4E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3F656D5D5BBDA1A71B94AB /* Pods-MapsPeople Sample Integration iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -279,6 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.crowdconnected.MapsPeople-Sample-Integration-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-arm64 $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-arm64";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +394,7 @@
 		};
 		62711A9D268BB91900A95A4E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C262F6C24A6C8495E20008CB /* Pods-MapsPeople Sample Integration iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.crowdconnected.MapsPeople-Sample-Integration-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedCore/CrowdConnectedCore.xcframework/ios-arm64 $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-x86_64-simulator $(SRCROOT)/Pods/CrowdConnectedIPS/CrowdConnectedIPS.xcframework/ios-arm64";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

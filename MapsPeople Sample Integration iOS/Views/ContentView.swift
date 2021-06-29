@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import CrowdConnectedCore
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        MapsPeopleView()
+            .edgesIgnoringSafeArea(.all)
+            .onAppear(perform: {
+                CrowdConnected.shared.startNavigation()
+            })
+            .onDisappear(perform: {
+                CrowdConnected.shared.stopNavigation()
+            })
     }
 }
 

@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import CrowdConnectedIPS
 
 @main
 struct MapsPeople_Sample_Integration_iOSApp: App {
+    
+    init() {
+        CrowdConnectedIPS.activate()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
