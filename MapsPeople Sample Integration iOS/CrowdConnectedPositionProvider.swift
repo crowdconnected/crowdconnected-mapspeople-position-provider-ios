@@ -17,18 +17,6 @@ class CrowdConnectedPositionProvider: NSObject, MPPositionProvider {
     var providerType: MPPositionProviderType = .GPS_POSITION_PROVIDER
     var preferAlwaysLocationPermission: Bool = false
     var locationServicesActive: Bool = false
-    
-    override init() {
-        super.init()
-
-        CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret: "YOUR_SECRET") { deviceId, error in
-            guard error == nil else {
-                // Check credentials/network connection
-                return
-            }
-        }
-        CrowdConnected.shared.delegate = self
-    }
 
     func requestLocationPermissions() {
         locationServicesActive = true
@@ -40,10 +28,20 @@ class CrowdConnectedPositionProvider: NSObject, MPPositionProvider {
     
     func startPositioning(_ arg: String?) {
         running = true
+
+        CrowdConnected.shared.start(appKey: "YOUR_APP_KEY", token: "YOUR_TOKEN", secret: "YOUR_SECRET") { deviceId, error in
+            guard error == nil else {
+                // Check credentials/network connection
+                return
+            }
+        }
+        CrowdConnected.shared.delegate = self
     }
     
     func stopPositioning(_ arg: String?) {
         running = false
+
+        CrowdConnected.shared.stop()
     }
     
     func startPositioning(after millis: Int32, arg: String?) {
